@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RVR_LinearTest</class>
+ <widget class="QDialog" name="RVR_LinearTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>801</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>线性测试</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片1</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_input_1">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morOffset_1">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_one">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>26</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_one">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片2</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_2">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_two">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_2">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>25</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_two">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片3</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_3">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_3">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_three">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>25</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_three">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片4</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_4">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_4">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_4">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_four">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>24</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_four">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>307</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片5</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_5">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_5">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_five">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>25</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_five">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>376</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片6</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_6">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_6">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_six">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>25</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_six">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>443</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片7</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_7">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_seven">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_7">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>25</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_seven">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>781</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>衰减片8</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_morOffset_8">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>23</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>25</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> T值</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_morValue_8">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>22</y>
+       <width>120</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_test_eigth">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>18</y>
+       <width>70</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_input_8">
+     <property name="geometry">
+      <rect>
+       <x>93</x>
+       <y>22</y>
+       <width>80</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>53</x>
+       <y>25</y>
+       <width>48</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>9</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MOR误差：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>26</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_clear_eight">
+     <property name="geometry">
+      <rect>
+       <x>664</x>
+       <y>18</y>
+       <width>80</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清除</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>24</y>
+       <width>32</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>误差</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>623</x>
+       <y>27</y>
+       <width>14</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>%</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RVR_Alignment</class>
+ <widget class="QDialog" name="RVR_Alignment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>821</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>对准</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox_alignmentSignal">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>900</y>
+      <width>801</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>信号</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit_sgnal">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>40</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>40</y>
+       <width>391</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>45</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>信号强度：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_signal_status">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>701</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_zhang_gry_Y150">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>900</y>
+      <width>801</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string> 陀螺仪</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_send_Y30">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>381</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>发射端主机</string>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>40</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X轴角度</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>351</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>操作</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_init_sen">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>初始化</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_cansle_sen">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>取消初始化</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Z轴角度</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>40</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y轴角度</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_send_current">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>当前值</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_CurrentZ_sen">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_CurrentX_sen">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>20</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_CurrentY_sen">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_send_init">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>初始化值</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_initX_sen">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>22</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_initY_sen">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>22</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_initZ_sen">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>22</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>30</y>
+       <width>381</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>接收端主机</string>
+     </property>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>64</x>
+        <y>40</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X轴角度</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>351</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>操作</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_init_rec">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>初始化</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_cansle_rec">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>取消初始化</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>40</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Z轴角度</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>159</x>
+        <y>40</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y轴角度</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_reciver_current">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>当前值</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_CurrentZ_rec">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>20</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_CurrentX_rec">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_CurrentY_rec">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_reciver_init">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>351</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>初始化值</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_initX_rec">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>22</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_initY_rec">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>22</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_initZ_rec">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>22</y>
+         <width>70</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_gry_setZero">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>801</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>陀螺仪复位</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>371</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>发射机端角度</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>20</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>40</y>
+        <width>20</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_send_Xdegree">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>58</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_send_Ydegree">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>58</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_send_Zdegree">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>58</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>o</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>o</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>o</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>50</y>
+       <width>371</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>接收机端角度</string>
+     </property>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>40</y>
+        <width>20</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>20</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_reciv_Ydegree">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>58</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_reciv_Zdegree">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>58</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_reciv_Xdegree">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>58</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>o</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>o</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>40</y>
+        <width>11</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>o</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_groy_setZero">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>240</y>
+       <width>201</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>复位陀螺仪</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

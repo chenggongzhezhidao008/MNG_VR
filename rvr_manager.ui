@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RVR_Manager</class>
+ <widget class="QMainWindow" name="RVR_Manager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>675</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>920</width>
+    <height>675</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>920</width>
+    <height>675</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑 Light</family>
+    <pointsize>11</pointsize>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>15</y>
+      <width>902</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>902</width>
+      <height>591</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>902</width>
+      <height>591</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="background">
+     <brush brushstyle="Dense7Pattern">
+      <color alpha="255">
+       <red>160</red>
+       <green>160</green>
+       <blue>160</blue>
+      </color>
+     </brush>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_statues" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>902</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>0</y>
+       <width>181</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>58</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RVR状态</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Waring">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>0</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_WaringText">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>0</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>良好</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>920</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRVR">
+    <property name="title">
+     <string>RVR(R)</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>RVR操作(O)</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionAlignment"/>
+     <addaction name="separator"/>
+     <addaction name="actionCalibration"/>
+     <addaction name="separator"/>
+     <addaction name="actionLinearTest"/>
+     <addaction name="separator"/>
+     <addaction name="action_soft_reset"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuRVR_C">
+     <property name="title">
+      <string>RVR配置(C) </string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionDefaultSet"/>
+     <addaction name="separator"/>
+     <addaction name="actionRVR"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menu_3"/>
+    <addaction name="separator"/>
+    <addaction name="menuRVR_C"/>
+    <addaction name="separator"/>
+    <addaction name="action"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>主界面(M)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCurrentstatus"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>软件(V)</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_Version"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuVRMNG">
+    <property name="title">
+     <string>VRMNG(VR)</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>参数(V)                     </string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionCurrentconfig"/>
+     <addaction name="separator"/>
+     <addaction name="actionDefaultConfig"/>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menu_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuVRMNG"/>
+   <addaction name="menuRVR"/>
+   <addaction name="menu"/>
+   <addaction name="menu_V"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAlignment">
+   <property name="text">
+    <string>对准                   </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionCalibration">
+   <property name="text">
+    <string>校准</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionLinearTest">
+   <property name="text">
+    <string>线性测试</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionDefaultSet">
+   <property name="text">
+    <string>通讯配置(C)                </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionCurrentconfig">
+   <property name="text">
+    <string>当前配置参数           </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionDefaultConfig">
+   <property name="text">
+    <string>出厂配置参数</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionCurrentstatus">
+   <property name="text">
+    <string>当前数据               </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>RVR管理工具(T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="action_soft_reset">
+   <property name="text">
+    <string>软件复位</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_Version">
+   <property name="text">
+    <string>版本信息               </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出(Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionRVR">
+   <property name="text">
+    <string>RVR计算参数 (P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

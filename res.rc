@@ -1,0 +1,25 @@
+
+#include <winbase.h>
+#include <winver.h>
+
+IDI_ICON1 ICON "VRMNG.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "北京视程科技有限公司"
+            VALUE "FileDescription", "VRMNG客户端"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "RVR_manager.exe"
+        END
+    END
+END

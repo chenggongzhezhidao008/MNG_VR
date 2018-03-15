@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Serial_Message</class>
+ <widget class="QWidget" name="Serial_Message">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>742</width>
+    <height>559</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>742</width>
+    <height>559</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonSendData">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>168</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>接收数据HEX</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>141</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>发送数据</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditLogShow">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>701</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_txt">
+   <property name="geometry">
+    <rect>
+     <x>639</x>
+     <y>510</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TXT</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_sendData">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>701</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>实时数据显示</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEditReci">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>701</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonexcel">
+   <property name="geometry">
+    <rect>
+     <x>549</x>
+     <y>510</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>EXCEL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_from_set">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>510</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>导出历史数据</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_return_set">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>900</y>
+     <width>701</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+    </font>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButtontime">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>5</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>时间</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonAD">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>5</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ad值</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonMor">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>5</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mor值</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonsendtemperatrue">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>5</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发射机温度</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonsendshidu">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>5</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发射机湿度</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonrecivtemperatrue">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>5</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>接收机温度</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonrecivshidu">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>5</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>接收机湿度</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonok">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>5</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_return_set">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>900</y>
+     <width>48</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>顺序调整</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar_outputProgress">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>510</y>
+     <width>371</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
